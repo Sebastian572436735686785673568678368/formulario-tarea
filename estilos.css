@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #386ab4;
+    padding: 5px;
+    text-align: right;
+}
+nav a {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    color: #ff9900;
+}
+
+section {
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.lineas {
+    display: flex;
+    align-items: center;
+}
+  
+.lineas hr {
+    width: 50%;
+    background-color: rgb(221, 218, 218);
+}
+  
+.lineas > div {
+    padding: 0 10px;
+}
+
+.boton{
+    display: flex;
+    width: 100%;
+    height: min-content;
+    border: 2px solid #ded5d5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logos{
+   width: 50px;
+   height: 50px; 
+   padding: 8px;
+}
+
+.boton p{
+    align-content: baseline;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a:hover{
+    background-color:#386ab4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100pvh;
+    margin-top: -10px;
+}
+
+.form-container {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 0;
+    padding: 1opx;
+}
+
+h2 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #ff9900;
+    margin-top: 0;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1495ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+ footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-top: 4px solid #fff;
+        }
+.fa-solid{
+    color: rgb(211, 30, 30);
+    padding: 5px;
+    height: 6px;
+    }

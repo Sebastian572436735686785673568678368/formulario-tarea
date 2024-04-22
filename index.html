@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="titulo-container">
+            <img src="logo.png" alt="logo" />
+            <h1>Registro Nacional de Tenencia Responsable de Mascotas y Animales de Compañía</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="#registronacional">Registro Nacional</a>
+        <a href="#requisitos">Requisitos Microchip</a>
+        <a href="#formulario">Formulario</a>
+    </nav>
+    <section id="registronacional">
+        <div class="texto">
+            <h2>Registro Nacional</h2>
+            <div class="container">
+                <div class="form-container">
+                    <h1>Registro Nacional de Mascotas y Animales de Compañía</h1>
+                    <form class="formulario" action="registro_usuario.php" method="POST">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="email" placeholder="INGRESE TU GMAIL O C.I" class="contenido">
+                        <i class="fa-solid fa-address-card"></i>
+                        <input type="password" placeholder="INGRESA TU CONTRASEÑA" class="contenido">
+                        <button class="buton" onclick="capturar()">Registrarse</button>
+                        <div class="lineas">
+                            <hr>
+                            <div>o</div>
+                            <hr>
+                        </div>
+                        <a class="boton" href="https://www.google.com/intl/es-419/account/about/">
+                            <div>
+                                <img src="google.png" class="logos">
+                            </div>
+                            <div>
+                                <p>Continuar con Google</p>
+                            </div>
+                        </a>
+                        <a class="boton" href="https://www.facebook.com">
+                            <div>
+                                <img src="facebook.png" class="logos">
+                            </div>
+                            <div>
+                                <p>Continuar con facebook</p>
+                            </div>
+                        </a>
+                        <a class="boton" href="https://account.microsoft.com/account?lang=es-es&refd=www.google.com">
+                            <div>
+                                <img src="microsoft.png" class="logos">
+                            </div>
+                            <div>
+                                <p>Continuar con microsoft</p>
+                            </div>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="requisitos">
+        <div class="texto">
+            <h2>Requisitos Microchip</h2>
+            <div class="container">
+                <div class="form-container">
+                    <h1>Comprobante de Existencia para registro con dispositivo externo Mascotas y Animales de Compañía</h1>
+                    <form class="formulario" action="submit.php" method="POST">
+                        <label for="nombre">Nombre del Animal:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                        <label for="especie">Especie</label>
+                        <select name="especie" id="especie">
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select><br><br>
+                        <label>Genero:</label><br />
+                        <input type="radio" name="gen" />Macho<br />
+                        <input type="radio" name="gen" />Hembra <br /><br />
+                        <label>Esterilización:</label><br />
+                        <input type="radio" name="esterilizacion" />Sí<br />
+                        <input type="radio" name="esterilizacion" />No <br /><br />
+                        <label>Raza:</label><br />
+                        <select name="raza" id="raza">
+                            <option value="chapi">Chapi</option>
+                            <option value="cooker">Cooker</option>
+                            <option value="huskie">Huskie</option>
+                            <option value="pastor aleman">Pastor Alemán</option>
+                        </select><br><br>
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" name="color" required><br><br>
+                        <label>Método de Obtención:</label><br />
+                        <input type="radio" name="met" />Recogido <br />
+                        <input type="radio" name="met" />Reubicación <br />
+                        <input type="radio" name="met" />Regalo <br />
+                        <input type="radio" name="met" />Nacido en casa <br />
+                        <input type="radio" name="met" />Compra <br /><br />
+                        <label for="codigo_esterilizacion">Código de Esterilización:</label>
+                        <input type="password" id="codigo_esterilizacion" name="codigo_esterilizacion" maxlength="10" size="10"><br><br>
+                        <input type="submit" value="Registrar">
+                        <input type="reset" value="Limpiar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <div class="texto">
+            <h2>Formulario</h2>
+            <div class="form-container">
+                <h1>Datos de Veterinario Medico</h1>
+                <form class="formulario" action="submit.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellido" name="apellido" required><br><br>
+                    <label for="rut">Rut:</label>
+                    <input type="text" id="rut" name="rut" required><br><br>
+                    <label>Veterinario:</label><br />
+                    <input type="radio" name="vet" />Medico<br />
+                    <input type="radio" name="vet" />Tecnico<br /><br />
+                    <label for="comuna">Comuna:</label>
+                    <input type="text" id="comuna" name="comuna" required><br><br>
+                    <label for="fecha_procedimiento">Fecha de procedimiento:</label>
+                    <input type="date" id="fecha_procedimiento" name="fecha_procedimiento"><br><br>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>DERECHOS DE AUTOR RESERVADOS</h4>
+        <i class="fa-solid fa-dog"></i>
+        <i class="fa-solid fa-cat"></i>
+        <i class="fa-solid fa-house-medical"></i>
+        <i class="fa-solid fa-heart-pulse"></i>
+        <i class="fa-solid fa-paw"></i>
+        <i class="fa-solid fa-face-smile"></i>
+    </footer>
+</body>
+</html>
